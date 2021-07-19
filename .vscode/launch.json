@@ -18,5 +18,11 @@
             "type": "dart",
             "program": "lib/debug/debug_main.dart"
         },
+        {
+            "name": "flutter 异常",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/exceptions/exceptions_main.dart"
+        },
     ]
 }
