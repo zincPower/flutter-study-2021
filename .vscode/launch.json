@@ -24,5 +24,11 @@
             "type": "dart",
             "program": "lib/exceptions/exceptions_main.dart"
         },
+        {
+            "name": "flutter 组件",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/widget/widget_main.dart"
+        },
     ]
 }
