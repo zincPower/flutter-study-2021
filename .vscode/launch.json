@@ -1,5 +1,6 @@
 {
     "configurations": [
+        
         {
             "name": "flutter 路由",
             "request": "launch",
@@ -25,10 +26,10 @@
             "program": "lib/exceptions/exceptions_main.dart"
         },
         {
-            "name": "flutter 组件",
+            "name": "flutter state",
             "request": "launch",
             "type": "dart",
-            "program": "lib/widget/widget_main.dart"
+            "program": "lib/state/state_main.dart"
         },
     ]
 }

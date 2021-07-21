@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study_2021/widget/ancestor_state_page.dart';
-import 'package:flutter_study_2021/widget/global_key_page.dart';
-import 'package:flutter_study_2021/widget/state_page.dart';
+import 'package:flutter_study_2021/state/ancestor_state_page.dart';
+import 'package:flutter_study_2021/state/global_key_page.dart';
+import 'package:flutter_study_2021/state/state_manage_page.dart';
+import 'package:flutter_study_2021/state/state_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -82,6 +83,39 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
               child: Text('global key'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TapboxA(),
+                  ),
+                );
+              },
+              child: Text('自己管理状态'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ParentWidget(),
+                  ),
+                );
+              },
+              child: Text('父管理状态'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ParentWidgetC(),
+                  ),
+                );
+              },
+              child: Text('混合管理'),
             ),
           ],
         ),
