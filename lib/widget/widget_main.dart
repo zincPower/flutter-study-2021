@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_study_2021/widget/button_widget_page.dart';
 import 'package:flutter_study_2021/widget/text_widget_page.dart';
 
 void main() {
@@ -69,6 +70,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
               child: Text('Text Family Page'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ButtonWidgetPage(),
+                  ),
+                );
+              },
+              child: Text('Button Page'),
             ),
           ],
         ),
