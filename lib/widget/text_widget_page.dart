@@ -1,6 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_study_2021/widget/utils/font.dart';
+import 'package:flutter_study_2021/utils/font.dart';
 import 'package:path_provider/path_provider.dart';
 
 /// 文本样式
