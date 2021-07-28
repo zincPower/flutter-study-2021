@@ -121,10 +121,18 @@ class _ImageWidgetLoadPageState extends State<ImageWidgetLoadPage> {
     if (localPath.isNotEmpty) {
       children.add(Text('File'));
       children.add(Image.file(File(localPath)));
+      // 等同于
+      // Image(
+      //   image: FileImage(File(localPath)),
+      // );
     }
     if (assetImageByte != null) {
       children.add(Text('Memory'));
       children.add(Image.memory(assetImageByte!));
+      // 等同于
+      // Image(
+      //   image: MemoryImage(assetImageByte!),
+      // );
     }
 
     return Scaffold(
