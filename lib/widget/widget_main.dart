@@ -3,6 +3,9 @@ import 'package:flutter_study_2021/widget/button_widget_page.dart';
 import 'package:flutter_study_2021/widget/image_widget_page.dart';
 import 'package:flutter_study_2021/widget/switch_widget_page.dart';
 import 'package:flutter_study_2021/widget/text_widget_page.dart';
+import 'package:flutter_study_2021/widget/textfield_focus_node_page.dart';
+import 'package:flutter_study_2021/widget/textfield_theme_page.dart';
+import 'package:flutter_study_2021/widget/textfield_widget_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -116,6 +119,39 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
               child: Text('Switch and check box Page'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TextfieldWidgetPage(),
+                  ),
+                );
+              },
+              child: Text('Textfield widget Page'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FocusTestRoute(),
+                  ),
+                );
+              },
+              child: Text('Textfield focus widget Page'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TextfieldThemePage(),
+                  ),
+                );
+              },
+              child: Text('Textfield theme widget Page'),
             ),
           ],
         ),
