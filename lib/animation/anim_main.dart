@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study_2021/animation/anim_decoration/anim_decoration_main.dart';
 import 'package:flutter_study_2021/animation/anim_hero/anim_hero_page.dart';
+import 'package:flutter_study_2021/animation/anim_implicitly/anim_decoration_main.dart';
 import 'package:flutter_study_2021/animation/anim_page/page_route_builder_page.dart';
 import 'package:flutter_study_2021/animation/anim_stagger/stagger_route.dart';
 import 'package:flutter_study_2021/animation/anim_switcher/animated_switcher_main.dart';
