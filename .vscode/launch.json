@@ -48,5 +48,11 @@
             "type": "dart",
             "program": "lib/dio/dio_main.dart"
         },
+        {
+            "name": "flutter file",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/file/file_main.dart"
+        },
     ]
 }
