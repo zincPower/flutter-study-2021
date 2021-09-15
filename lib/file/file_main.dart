@@ -43,13 +43,6 @@ class _FileOperationRouteState extends State<FileOperationRoute> {
     });
   }
 
-  // 获取保存文件路径
-  Future<File> _getLocalFile() async {
-    // 获取应用目录
-    String dir = (await getApplicationDocumentsDirectory()).path;
-    return new File('$dir/counter.txt');
-  }
-
   // 读取内容
   Future<int> _readCounter() async {
     try {
@@ -62,13 +55,20 @@ class _FileOperationRouteState extends State<FileOperationRoute> {
     }
   }
 
-  // 增加内容
+  // 更改内容
   Future<Null> _incrementCounter() async {
     setState(() {
       _counter++;
     });
     // 将点击次数以字符串类型写到文件中
     await (await _getLocalFile()).writeAsString('$_counter');
+  }
+
+  // 获取保存文件路径
+  Future<File> _getLocalFile() async {
+    // 获取应用目录
+    String dir = (await getApplicationDocumentsDirectory()).path;
+    return new File('$dir/counter.txt');
   }
 
   @override

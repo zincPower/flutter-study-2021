@@ -12,9 +12,13 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # 模块化
+  zinc_package:
+    path: ./zinc_package
+
+  # 第三方库
   cupertino_icons: ^1.0.2
   path_provider: ^2.0.2 # 文件管理
-  dio: ^4.0.0
 
 dev_dependencies:
   flutter_test:
@@ -28,7 +32,7 @@ flutter:
   # 使用 flutter 默认包含的 Material Design 字体图标
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
+  # 添加静态资源
   assets:
     - assets/json/text_user_data.json
     - assets/json/text_user_data_root_bundle.json
@@ -42,25 +46,7 @@ flutter:
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages
+  # 添加字体
   fonts:
     - family: testFontFamily
       fonts:

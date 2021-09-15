@@ -43,10 +43,10 @@
             "program": "lib/animation/anim_main.dart"
         },
         {
-            "name": "flutter dio",
+            "name": "flutter http",
             "request": "launch",
             "type": "dart",
-            "program": "lib/dio/dio_main.dart"
+            "program": "lib/http/http_main.dart"
         },
         {
             "name": "flutter file",
