@@ -88,13 +88,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  hello:
-    dependency: "direct main"
-    description:
-      path: hello
-      relative: true
-    source: path
-    version: "0.0.1"
   http_parser:
     dependency: transitive
     description:
