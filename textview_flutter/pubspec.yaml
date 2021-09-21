@@ -1,0 +1,26 @@
+name: textview_flutter
+description: A new Flutter project.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# 注册插件和原生扣接，路径要和原生一致
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.zinc.textview_flutter
+        pluginClass: AndroidTextViewPlugin
+
+

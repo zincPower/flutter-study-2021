@@ -16,6 +16,10 @@ dependencies:
   zinc_package:
     path: ./zinc_package
 
+  # 插件
+  textview_flutter:
+    path: ./textview_flutter
+
   # 第三方库
   cupertino_icons: ^1.0.2
   path_provider: ^2.0.2 # 文件管理
@@ -28,9 +32,6 @@ dev_dependencies:
 
 flutter:
 
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   # 使用 flutter 默认包含的 Material Design 字体图标
   uses-material-design: true
 
@@ -42,11 +43,6 @@ flutter:
     - assets/images/dpi_test_icon.jpg
     - packages/flutter_study_2021/images/package_icon.jpg
     - assets/images/icon_image_test.png
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware.
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/assets-and-images/#from-packages
 
   # 添加字体
   fonts:

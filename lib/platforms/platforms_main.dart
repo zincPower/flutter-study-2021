@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_study_2021/platforms/camera.dart';
+import 'package:textview_flutter/platform_channel.dart';
+import 'package:textview_flutter/platform_text_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,22 +30,29 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
+  void initState() {
+    super.initState();
+    TextViewChannel.getInstance().init();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return new Material(
-      child: new Center(
-        child: new Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Platform TextView"),
+      ),
+      body: SafeArea(
+        child: Column(
+          children: <Widget>[
+            Text("Flutter Text Top"),
+            Expanded(child: PlatformTextWidget(text: "江澎涌")),
             TextButton(
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (BuildContext context) {
-                    return CameraExampleHome();
-                  }),
-                );
+                TextViewChannel.getInstance().changeContent('zinc');
               },
-              child: Text('Camera'),
-            )
+              child: Text('change'),
+            ),
+            Text("Flutter Text Bottom"),
           ],
         ),
       ),
