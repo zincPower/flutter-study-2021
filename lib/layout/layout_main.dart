@@ -1,6 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:zinc_package/zinc_package.dart';
+import 'package:flutter_study_2021/layout/column_widget.dart';
+import 'package:flutter_study_2021/layout/flex_widget.dart';
+import 'package:flutter_study_2021/layout/nested_layout_widget.dart';
+import 'package:flutter_study_2021/layout/row_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -35,15 +38,43 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title ?? ''),
       ),
-      body: Column(
-        children: [
-          TextButton(
-            onPressed: () {
-
-            },
-            child: Text('Column'),
-          ),
-        ],
+      body: Center(
+        child: Column(
+          children: [
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return RowWidget();
+                }));
+              },
+              child: Text('Row'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ColumnWidget();
+                }));
+              },
+              child: Text('Column'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return NestedLayoutWidget();
+                }));
+              },
+              child: Text('Nested Layout'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return FlexLayoutWidget();
+                }));
+              },
+              child: Text('Flex Layout'),
+            ),
+          ],
+        ),
       ),
     );
   }
