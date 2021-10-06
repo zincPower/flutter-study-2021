@@ -2,8 +2,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_study_2021/layout/column_widget.dart';
 import 'package:flutter_study_2021/layout/flex_widget.dart';
+import 'package:flutter_study_2021/layout/flow_widget.dart';
 import 'package:flutter_study_2021/layout/nested_layout_widget.dart';
 import 'package:flutter_study_2021/layout/row_widget.dart';
+import 'package:flutter_study_2021/layout/wrap_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -72,6 +74,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 }));
               },
               child: Text('Flex Layout'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return WrapWidget();
+                }));
+              },
+              child: Text('Wrap Layout'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return FlowWidget();
+                }));
+              },
+              child: Text('Flow Layout'),
             ),
           ],
         ),
