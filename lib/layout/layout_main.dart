@@ -5,6 +5,7 @@ import 'package:flutter_study_2021/layout/flex_widget.dart';
 import 'package:flutter_study_2021/layout/flow_widget.dart';
 import 'package:flutter_study_2021/layout/nested_layout_widget.dart';
 import 'package:flutter_study_2021/layout/row_widget.dart';
+import 'package:flutter_study_2021/layout/stack_widget.dart';
 import 'package:flutter_study_2021/layout/wrap_widget.dart';
 
 void main() {
@@ -90,6 +91,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 }));
               },
               child: Text('Flow Layout'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return StackWidget();
+                }));
+              },
+              child: Text('Stack Layout'),
             ),
           ],
         ),
