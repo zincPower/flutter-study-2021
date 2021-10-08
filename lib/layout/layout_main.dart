@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_study_2021/layout/align_widget.dart';
+import 'package:flutter_study_2021/layout/center_widget.dart';
 import 'package:flutter_study_2021/layout/column_widget.dart';
 import 'package:flutter_study_2021/layout/flex_widget.dart';
 import 'package:flutter_study_2021/layout/flow_widget.dart';
@@ -108,6 +109,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 }));
               },
               child: Text('Align Layout'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return CenterWidget();
+                }));
+              },
+              child: Text('Center Layout'),
             ),
           ],
         ),
