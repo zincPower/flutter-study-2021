@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_study_2021/container/constrained_box_widget.dart';
 import 'package:flutter_study_2021/container/padding_widget.dart';
 
 void main() {
@@ -44,7 +45,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   return PaddingWidget();
                 }));
               },
-              child: Text('padding'),
+              child: Text('Padding'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ConstrainedBoxWidget();
+                }));
+              },
+              child: Text('Constrained Box'),
             ),
           ],
         ),
