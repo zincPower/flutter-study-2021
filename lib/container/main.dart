@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_study_2021/container/constrained_box_widget.dart';
+import 'package:flutter_study_2021/container/container_widget.dart';
 import 'package:flutter_study_2021/container/decorated_box_widget.dart';
 import 'package:flutter_study_2021/container/padding_widget.dart';
 import 'package:flutter_study_2021/container/transform_widget.dart';
@@ -72,6 +73,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 }));
               },
               child: Text('Transform'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ContainerWidget();
+                }));
+              },
+              child: Text('Container'),
             ),
           ],
         ),
