@@ -4,6 +4,8 @@ import 'package:flutter_study_2021/container/constrained_box_widget.dart';
 import 'package:flutter_study_2021/container/container_widget.dart';
 import 'package:flutter_study_2021/container/decorated_box_widget.dart';
 import 'package:flutter_study_2021/container/padding_widget.dart';
+import 'package:flutter_study_2021/container/scaffold_with_bottom_app_bar_widget.dart';
+import 'package:flutter_study_2021/container/scaffold_widget.dart';
 import 'package:flutter_study_2021/container/transform_widget.dart';
 
 void main() {
@@ -81,6 +83,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 }));
               },
               child: Text('Container'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ScaffoldWidget();
+                }));
+              },
+              child: Text('Scaffold'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ScaffoldWithBottomAppBarWidget();
+                }));
+              },
+              child: Text('Scaffold With BottomAppBar'),
             ),
           ],
         ),
