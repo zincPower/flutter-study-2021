@@ -38,10 +38,12 @@ class LayoutBuilderRoute extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _children = List.filled(6, Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Text("A"),
-    ));
+    var _children = List.filled(
+        6,
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("A"),
+        ));
     // Column在本示例中在水平方向的最大宽度为屏幕的宽度
     return Scaffold(
       body: SafeArea(

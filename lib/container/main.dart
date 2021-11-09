@@ -4,6 +4,7 @@ import 'package:flutter_study_2021/container/clip_widget.dart';
 import 'package:flutter_study_2021/container/constrained_box_widget.dart';
 import 'package:flutter_study_2021/container/container_widget.dart';
 import 'package:flutter_study_2021/container/decorated_box_widget.dart';
+import 'package:flutter_study_2021/container/fitted_box_widget.dart';
 import 'package:flutter_study_2021/container/padding_widget.dart';
 import 'package:flutter_study_2021/container/scaffold_with_bottom_app_bar_widget.dart';
 import 'package:flutter_study_2021/container/scaffold_widget.dart';
@@ -108,6 +109,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 }));
               },
               child: Text('Clip'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return FittedBoxWidget();
+                }));
+              },
+              child: Text('Fitted Box'),
             ),
           ],
         ),
