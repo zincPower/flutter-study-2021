@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_study_2021/layout/row_widget.dart';
+import 'package:flutter_study_2021/scroll/grid_view_widget.dart';
 import 'package:flutter_study_2021/scroll/list_view_widget.dart';
 import 'package:flutter_study_2021/scroll/singlechildscrollview_widget.dart';
 
@@ -79,6 +80,46 @@ class _MyHomePageState extends State<MyHomePage> {
                 }));
               },
               child: Text('ListView - 固定头部'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return GridViewFixedCrossAxisCountWidget();
+                }));
+              },
+              child: Text('GridView SliverGridDelegateWithFixedCrossAxisCount'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return GridViewWithCountWidget();
+                }));
+              },
+              child: Text('GridView.count'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return GridViewMaxCrossAxisExtentWidget();
+                }));
+              },
+              child: Text('GridView SliverGridDelegateWithMaxCrossAxisExtent'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return GridViewWithExtentWidget();
+                }));
+              },
+              child: Text('GridView.extent'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return GridViewWithBuilderWidget();
+                }));
+              },
+              child: Text('GridView.builder'),
             ),
           ],
         ),
