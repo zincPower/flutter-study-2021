@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_study_2021/layout/row_widget.dart';
+import 'package:flutter_study_2021/scroll/animated_list_widget.dart';
 import 'package:flutter_study_2021/scroll/grid_view_widget.dart';
 import 'package:flutter_study_2021/scroll/list_view_widget.dart';
 import 'package:flutter_study_2021/scroll/scroll_controller_widget.dart';
@@ -136,6 +137,14 @@ class _MyHomePageState extends State<MyHomePage> {
               }));
             },
             child: Text('ScrollNotification 监听'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return AnimatedListWidget();
+              }));
+            },
+            child: Text('AnimatedList'),
           ),
         ],
       ),
