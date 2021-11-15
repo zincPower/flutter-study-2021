@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// 带动画的 ListView
 class AnimatedListWidget extends StatefulWidget {
   const AnimatedListWidget({Key? key}) : super(key: key);
 
@@ -11,6 +12,8 @@ class _AnimatedListWidgetState extends State<AnimatedListWidget> {
   var data = <String>[];
   int counter = 5;
 
+  /// 需要通过 global key 进行获取到对应的 AnimatedListState ，才能使用到内部的
+  /// insertItem() 和 removeItem()
   final globalKey = GlobalKey<AnimatedListState>();
 
   @override

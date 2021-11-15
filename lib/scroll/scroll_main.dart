@@ -4,6 +4,7 @@ import 'package:flutter_study_2021/layout/row_widget.dart';
 import 'package:flutter_study_2021/scroll/animated_list_widget.dart';
 import 'package:flutter_study_2021/scroll/grid_view_widget.dart';
 import 'package:flutter_study_2021/scroll/list_view_widget.dart';
+import 'package:flutter_study_2021/scroll/pageview/page_view_widget.dart';
 import 'package:flutter_study_2021/scroll/scroll_controller_widget.dart';
 import 'package:flutter_study_2021/scroll/singlechildscrollview_widget.dart';
 
@@ -145,6 +146,14 @@ class _MyHomePageState extends State<MyHomePage> {
               }));
             },
             child: Text('AnimatedList'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return PageViewWidget();
+              }));
+            },
+            child: Text('PageView'),
           ),
         ],
       ),
